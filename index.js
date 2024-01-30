@@ -12,7 +12,7 @@ try{
     const r = await axios.put(
         'https://api.chatengine.io/users/',
         {username: username, secret: username, first_name: username},
-        {headers:{"private-key":"5a620d6a-3659-4946-98c8-377e8189d53e"}}
+        {headers:{"private-key":"private key"}}
     )
     return res.status(r.status).json(r.data)
 }catch(e){
